@@ -7,12 +7,10 @@
 
 ### Links and Resources
 * [repo](https://github.com/codefellows-js-401d29-aaron-ferris/lab03)
-* [travis](http://xyz.com)
-* [back-end](http://xyz.com) (when applicable)
-* [front-end](http://xyz.com) (when applicable)
+* [travis](https://travis-ci.com/codefellows-js-401d29-aaron-ferris/lab03)
+
 
 #### Documentation
-* [swagger](http://xyz.com) (API assignments only)
 * [jsdoc](http://xyz.com) (All assignments)
 
 ### Modules
@@ -42,5 +40,3 @@ Usage Notes or examples
 * What assertions were made?
 * What assertions need to be / should be made?
 
-#### UML
-Link to an image of the UML for your application and response to events
