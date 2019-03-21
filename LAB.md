@@ -1,8 +1,5 @@
 # LAB: Async
 
-## Submission Instructions
-* Follow the core submission instructions
-
 ### Before you begin
 * You'll need to initialize this lab folder as a new node module, install your dependencies, setup your npm script commands, and pull in your config files
 
