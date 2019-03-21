@@ -5,7 +5,7 @@ const faker = require('faker')
 // const file = `${__dirname}/files/test.txt`;
 
 /** Reads file, and gives back data that was there in console.
- * param file, error and data
+ * @param file error and data
  */
 fs.readFile(extension, (err,data) => {
   const file = `${__dirname}/${extension}`;
@@ -16,7 +16,7 @@ fs.readFile(extension, (err,data) => {
     console.log(data);
   let contents =(faker.random.number()).toString();
 /** Interior function which takes replaces contents with a random number as a string
- * param file, contents, err, data
+ * @param file, contents, err, data
  */
   fs.writeFile(file, Buffer.from(contents), (err,data) =>{
     if (err) {

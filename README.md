@@ -14,7 +14,22 @@
 * [jsdoc](http://xyz.com) (All assignments)
 
 ### Modules
-#### `modulename.js`
+#### `edit-file.js`
+##### No Exported Values and Methods
+
+###### `readFile -> string`
+reads the contents of a txt file, nested  writefile to change the content, and nexted with read file again to return value
+
+#### `reader-fixed.js`
+##### Exported Values and Methods
+
+###### `readAll(paths, callback) -> string, string, string`
+uses read one three times and creates an array of the content from 3 external files as given by readOne. Exports to indesx
+###### `readOne(paths,callback) -> string`
+takes in a path given by readAll, returns error or the contents of a file so readAll can return that 
+#### `reader-promise.js`
+not completed
+#### `index.js`
 ##### Exported Values and Methods
 
 ###### `foo(thing) -> string`
@@ -23,20 +38,26 @@ Usage Notes or examples
 ###### `bar(array) -> array`
 Usage Notes or examples
 
+
 ### Setup
 #### `.env` requirements
-* `PORT` - Port Number
-* `MONGODB_URI` - URL to the running mongo instance/db
+* use files given
+* scripts
+  * "test": "jest --verbose --coverage",
+  *  "test-watch": "jest --verbose --coverage --watchAll",
+  *   "lint": "**/*.eslint",
+  *  "jsdocs": "jsdoc -c .docs/config/jsdoc.config.json"
+* dependancies:
+  * faker
+  * fs
+  * lint
 
 #### Running the app
-* `npm start`
-* Endpoint: `/foo/bar/`
-  * Returns a JSON object with abc in it.
-* Endpoint: `/bing/zing/`
-  * Returns a JSON object with xyz in it.
+* for edit-file, in directory where edit-file.js is run  `node edit-file.js ./(myfilepath)`
+* for reader-fixed in directory where reader-fixed is run `node index.js ./files/1.txt ./files/2.txt ./files/3.txt`
+  * make sure you have 3 files after, and make sure that the index.js has reader-fixed as its point for exporting data
+
   
 #### Tests
-* How do you run tests?
-* What assertions were made?
-* What assertions need to be / should be made?
+couldn't get to tests
 
